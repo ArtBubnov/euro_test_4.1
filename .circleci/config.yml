@@ -1,0 +1,19 @@
+version: 2.1
+
+jobs:
+  deploy:
+    docker:
+      - image: cimg/node:19.2.0
+    steps:
+      - checkout
+      
+      - run:
+          name: "TEST"
+          command: . build/test.sh
+
+
+workflows:
+  version: 2
+  push-workflow:
+    jobs:
+      - deploy
