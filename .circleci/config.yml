@@ -9,7 +9,7 @@ jobs:
       
       - run:
           name: "TEST"
-          command: . build/test.sh
+          command: . .circleci/build/test.sh
 
 
 workflows:
