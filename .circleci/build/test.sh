@@ -1,5 +1,5 @@
  TEST="test"
- if [[ -z ${TEST} ]] ; then 
+ if [[ -z ${"TEST"} ]] ; then 
     echo "PASS"
     else
     echo "ERROR"
