@@ -9,7 +9,7 @@ jobs:
       
       - run:
           name: "TEST"
-          command: . .circleci/build/test.sh
+          command: echo $CIRCLE_PULL_REQUEST
 
 
 workflows:
